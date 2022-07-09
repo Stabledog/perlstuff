@@ -7,6 +7,14 @@
 - Module search: http://www.cpan.org/modules/index.html
 
 #### Setup
+
+** Using [`perlbrew`](https://perlbrew.pl/) seems attractive: **
+```
+curl -L https://install.perlbrew.pl | bash
+source ~/perl5/perlbrew/etc/bashrc
+```
+
+** The official way seems brittle and high maintenance: **
 - Use `cpanm` to install modules
 ```
 # Basic setup for new machine

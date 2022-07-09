@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  perl:
+    image: perl:latest
+    init: true
+    command: sleep infinity
+    volumes:
+      - .:/workspace
+      - ${HOME}:/host_home:ro

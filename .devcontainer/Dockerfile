@@ -26,7 +26,7 @@ RUN apt-get update \
     # Clean up
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts/
 
-RUN apt-get update && apt-get install -y cpanminus && yes | cpan  App::cpanminus \
+RUN apt-get update && apt-get install -y build-essential  \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts/
 
 # Setting the ENTRYPOINT to docker-init.sh will configure non-root access

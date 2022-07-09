@@ -8,11 +8,15 @@
 
 #### Setup
 
-** Using [`perlbrew`](https://perlbrew.pl/) seems attractive: **
+** Using [`perlbrew`](https://perlbrew.pl/) seems attractive, but build is super long: **
+Sort of like `nvm`
 ```
 curl -L https://install.perlbrew.pl | bash
 source ~/perl5/perlbrew/etc/bashrc
+perlbrew install perl-5.34.0
+perlbrew switch perl-5.34.0
 ```
+- This actual builds perl from source.  Time consuming.  Put it into Dockerfile build perhaps.
 
 ** The official way seems brittle and high maintenance: **
 - Use `cpanm` to install modules
